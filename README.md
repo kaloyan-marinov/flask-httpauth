@@ -1,9 +1,22 @@
+# Setup
+
+(This has been developed using Python 3.8.3.)
+Open a terminal, navigate into a directory of your choice, clone this repository, and
+run:
+```
+$ python3 -m venv venv
+$ source venv/bin/activate
+(venv) $ pip install --upgrade pip
+(venv) $ pip install -r requirements.txt
+(venv) $ deactivate
+```
+
 # Example: basic authentication
 
 1. Open a terminal, navigate into the project directory, and run:
 ```
 $ source venv/bin/activate
-$ explort FLASK_APP=example_basic_authentication.py
+$ export FLASK_APP=example_basic_authentication.py
 $ flask run
 ```
 
@@ -54,12 +67,14 @@ Date: Thu, 24 Sep 2020 15:14:52 GMT
 {"message":"Hello, susan!"}
 ```
 
+3. Close the second terminal; run `deactivate` in the first terminal, and close it
+
 # Example: token authentication
 
 1. Open a terminal, navigate into the project directory, and run:
 ```
 $ source venv/bin/activate
-$ explort FLASK_APP=example_token_authentication.py
+$ export FLASK_APP=example_token_authentication.py
 $ flask run
 ```
 
@@ -152,3 +167,5 @@ Unauthorized Access
 {"message":"Hello, susan!"}
 * Closing connection 0
 ```
+
+3. Close the second terminal; run `deactivate` in the first terminal, and close it
