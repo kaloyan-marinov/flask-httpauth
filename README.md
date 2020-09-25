@@ -1,7 +1,7 @@
 1. Open a terminal, navigate into the project directory, and run:
 ```
 $ source venv/bin/activate
-$ explort FLASK_APP=example.py
+$ explort FLASK_APP=example_basic_authentication.py
 $ flask run
 ```
 
